@@ -8,5 +8,5 @@ As the original 12F compatible module no more supported, changes to the Espressi
 EspNow time sync happily working with 5 pcs boards! <br>
 <img src="pic/C3mBusEspnowBitlash0719.gif" width=320 >
 ---
-Next step to add ESP32C3mini-1 for a smaller size...<br>
+Next step to add ESP32C3mini-1 for smaller module...<br>
 [C3WroomMini plan] (https://github.com/jmysu/C3WroomPicoRS232/blob/main/C3mBus2023wroomN4.pdf) 
