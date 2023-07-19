@@ -15,6 +15,6 @@ Next step to add ESP32C3mini-1 for smaller module...<br>
 ---
 ## References
   - [Bitlash](http://bitlash.net/) A programmable command shell for arduino. <br>
-    [Bitlash user guide] 
+    [Bitlash user guide](https://github.com/jmysu/C3WroomPicoRS232/blob/main/PlatformIO/C3mBusN4_Bitlash/bitlash-users-guide.pdf)
   - [TinyBasic+](https://github.com/BleuLlama/TinyBasicPlus) A C implementation of Tiny Basic. <br>
   - [Quick EspNOW](https://github.com/gmag11/QuickESPNow) A wireless protocol that allows devices links without network.
