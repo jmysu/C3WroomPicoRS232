@@ -5,5 +5,5 @@ As the original 12F compatible module no more supported, changes to the Espressi
 <img src="pic/C3WroommBusPicoRS232.png" width=320 > <br>
 <br>
 ---
-EspNow time sync works with 5 pcs board! <br>
+EspNow time sync happily working with 5 pcs boards! <br>
 <img src="pic/C3mBusEspnowBitlash0719.gif" width=320 >
