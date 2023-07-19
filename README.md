@@ -10,3 +10,11 @@ EspNow time sync happily working with 5 pcs boards! <br>
 ---
 Next step to add ESP32C3mini-1 for smaller module...<br>
 [C3WroomMini plan] (https://github.com/jmysu/C3WroomPicoRS232/blob/main/C3mBus2023wroomN4.pdf) 
+<br>
+<br>
+---
+## References
+  - [Bitlash](http://bitlash.net/) A programmable command shell for arduino. <br>
+    [Bitlash user guide] 
+  - [TinyBasic+](https://github.com/BleuLlama/TinyBasicPlus) A C implementation of Tiny Basic. <br>
+  - [Quick EspNOW](https://github.com/gmag11/QuickESPNow) A wireless protocol that allows devices links without network.
