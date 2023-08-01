@@ -34,7 +34,11 @@ extern ANSI ansi;
           Serial.print("WiFi_SNTP ");
          #endif
          #if (ENABLE_OTA)
-          if (WiFi.status()==WL_CONNECTED) Serial.print("ElegantOTA<8.8.4.4> ");
+           //if (WiFi.status()==WL_CONNECTED) Serial.print("ElegantOTA<8.8.4.4> ");
+           Serial.print("ElegantOTA<8.8.4.4>:8080 ");
+         #endif
+         #if (ENABLE_ESPUI)
+            Serial.print("ESPUI<8.8.4.4>:80 ");
          #endif
          #if (ENABLE_QESPNOW)
           Serial.print("QEspNOW ");

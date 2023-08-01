@@ -50,6 +50,10 @@ extern void printNodesAlive();
 extern void printNodesRSSI();
 extern uint64_t getNodesMacFromID(uint16_t uID16);
 
+extern int getNodes();
+extern uint64_t getNodesMac(int i);
+extern int8_t getNodesRSSI(int i);
+
 extern void addNodesName(unsigned char*);
 extern void printNodesName();
 extern uint64_t getNodesMacFromName(unsigned char*);

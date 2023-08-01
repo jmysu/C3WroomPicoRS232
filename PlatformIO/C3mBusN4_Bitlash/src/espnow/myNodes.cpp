@@ -44,6 +44,36 @@ void printNodes()
         }
     int32_t imsLeader= _myNodesTime->getData(_myNodesTime->size()-1)%1000;  
     Serial.printf("]<==\tSync@%03lu(%03lu)ms\n", imsLeader, 1000-imsLeader); //sync time   
+/*
+    //test Nodes functions
+    Serial.printf("Total nodes:%d\n", getNodes());
+    for (int i=0;i<getNodes();i++) {
+        Serial.printf("<%llX>", getNodesMac(i));
+        Serial.printf(":%d ", getNodesRSSI(i));
+        }
+    Serial.println();    
+*/
+}
+
+int getNodes()
+{
+    return _myNodesTime->size();
+}
+
+uint64_t getNodesMac(int i) 
+{
+    if (i<_myNodesTime->size()){
+        return _myNodesTime->getKey(i);
+        }
+    return 0;
+}
+
+int8_t getNodesRSSI(int i) 
+{
+    if (i<_myNodesRSSI->size()){
+        return _myNodesRSSI->getData(i);
+        }
+    return 0;    
 }
 
 void printNodesOld()

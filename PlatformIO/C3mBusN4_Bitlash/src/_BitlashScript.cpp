@@ -24,7 +24,6 @@ int iMyScriptType;
 // #define LED_ON  0
 // #define LED_OFF 1
 #define DEST_ADDR ESPNOW_BROADCAST_ADDRESS
-
 #include "espnow/myEspNow.h" //struct && enum
 
 bool isEspNowRXed = false; // flag for loop processing
@@ -40,6 +39,7 @@ void espSendHelloCB()
 
 extern void prompt(void); // bitlash prompt
 extern void setupSD();
+extern void setupESPUI();
 
 auto& usbSerial = Serial;
 //=============================================================================
@@ -96,8 +96,11 @@ void setup()
         // WiFi.mode(WIFI_AP_STA); // default AP_STA mode for OTA
         // setupWiFiHome();
         // if (WiFi.status() == WL_CONNECTED)
-        setupOTA();
 
+        setupOTA();     //8.8.4.4:8080
+        #if (ENABLE_ESPUI)
+         setupESPUI();   //8.8.4.4:80
+        #endif
     } else
         WiFi.disconnect(true); // wifi-off
 #else
@@ -188,6 +191,7 @@ void setup()
     //==========================================================
     prompt(); // bitlash Prompt
     setupSD();
+
 }
 
 /*
@@ -204,6 +208,7 @@ void setup()
 uint32_t lastStatusMs = 0;
 unsigned long _lastPingMs = 0;
 uint8_t counter = 0;
+extern void loopESPUI();
 void loop()
 {
 
@@ -307,4 +312,8 @@ void loop()
             processTinyBasicPlus();
         }
     }
+    
+#if (ENABLE_ESPUI)
+    loopESPUI();
+#endif
 }
