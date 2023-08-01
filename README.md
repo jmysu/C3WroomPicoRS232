@@ -17,7 +17,7 @@ Next step to add ESP32C3mini-1 for smaller module...<br>
 ---
 ## Added ESPUI for the ESPNOW Dashboard
  <br>
- <img src="pic/BitlashEspNowEspUI_0801.png"> 
+ <img src="pic/BitlashEspNowEspUI_0801rssi.png"> 
 <br>
 <br>
 
