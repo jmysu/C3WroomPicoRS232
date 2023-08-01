@@ -29,6 +29,7 @@ int NodesId;
 int DashboardId;
 String sLogo = "<img src='/JimmyCraft_sq.jpg' width=32>&nbsp;";
 String sEspNow = "<img src='/EspNow.png' width=128";
+String sSignal = "Nodes RSSI &nbsp;<img src='/signal-range.png' width=32>";
 extern uint32_t getESP32ChipID24();
 char cDashName[32];
 
@@ -265,7 +266,7 @@ void setupESPUI(void)
     //ESPUI.addControl(Separator, "Nodes", "", None);
     ESPUI.addControl(Separator, (const char*)sEspNow.c_str(), "", None);
 
-    NodesId = ESPUI.label("NODES:RSSI", ControlColor::Turquoise, "12345679abcdef");
+    NodesId = ESPUI.label(sSignal.c_str(), ControlColor::Turquoise, "12345679abcdef");
 
     /*
      * .begin loads and serves all files from PROGMEM directly.
